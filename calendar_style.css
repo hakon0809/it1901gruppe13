@@ -11,12 +11,7 @@ table thead tr th {
   padding: 0.5em;
   overflow: hidden;
 }
-table thead tr th:first-child {
-  border-radius: 3px 0 0 0;
-}
-table thead tr th:last-child {
-  border-radius: 0 3px  0 0;
-}
+
 table thead tr th .day {
   display: block;
   font-size: 1.2em;
@@ -27,15 +22,7 @@ table thead tr th .day {
   padding: 5px;
   line-height: 1.8;
 }
-table thead tr th .day.active {
-  background: #d1d5db;
-  color: #626E7E;
-}
 
-table thead tr th i {
-  vertical-align: middle;
-  font-size: 2em;
-}
 table tbody tr {
   background: #d1d5db;
 }
@@ -51,7 +38,6 @@ table tbody tr td {
   border-left: 1px solid #626E7E;
   position: relative;
   height: 32px;
-  cursor: pointer;
 }
 table tbody tr td:last-child {
   border-right: 1px solid #626E7E;
@@ -63,10 +49,7 @@ table tbody tr td.hour {
   background: #fff;
   border-bottom: 1px solid #626E7E;
   min-width: 80px;
-  cursor: default;
 }
 table tbody tr td.hour span {
   display: block;
 }
-
-
