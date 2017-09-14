@@ -4,6 +4,7 @@
   border-spacing: 0;
   table-layout: fixed;
   margin-bottom: 50px;
+  max-width: 1000px;
 }
 table thead tr th {
   background: #626E7E;
