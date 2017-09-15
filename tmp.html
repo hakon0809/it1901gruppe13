@@ -7,6 +7,11 @@
     <!--<link rel="stylesheet" type="text/css" href="template_clean.css">-->
     <style type="text/css">
 
+      body{
+        margin: 0px;
+        background-color: #e6e6e6;
+      }
+
       #Site {
           display: flex;
           min-height: 100vh;
@@ -14,22 +19,31 @@
       }
 
       #header {
-        border-style: solid;
+        width: 100%;
+        background-color: #333333;
+      }
+
+      #inner-header {
         max-width: 1000px;
         margin: auto;
+        background-color: #1a1a1a;
+        overflow: hidden;
+        color: white;
       }
       
       #Main-content {
-        max-width: 720px;
+        max-width: 1000px;
         margin: auto;
         flex-grow: 1;
         flex-shrink: 1;
+        background-color: white;
       }
 
       #footer {
         padding: 10px;
         text-align: center;
-        border-top-style: dotted;
+        background-color: #4d4d4d;
+        
       }
 
       #overskrift1, #overskrift2 {
@@ -37,8 +51,8 @@
       }
 
       #menubar {
-        width: 720px;
-        float: right;
+        max-width: 1000px;
+        float: left;
         height: 50px;
         text-align: center; 
         margin: 0 auto;
@@ -48,7 +62,7 @@
         list-style-type: none;
         margin: 0;
         padding: 0;
-        overflow: hidden;
+        width: 500px;
       }
 
       ul#menu li a {
@@ -69,21 +83,22 @@
   </head>
   
   <body id="Site">
-    
     <header id="header">
-      <div id="overskrift1">
-        <h1>WELCOME</h1>
-      </div>
-      <div id="overskrift2">
-        <h2>To this Shit Site</h2>
-      </div>
-      <div id="menubar">
-        <ul id="menu">
-            <li><a>Home</a></li>
-            <li><a>Something</a></li>
-            <li><a>Things</a></li>
-            <li><a>Nothing</a></li>
-        </ul>
+      <div id="inner-header">
+        <div id="overskrift1">
+          <h1>WELCOME</h1>
+        </div>
+        <div id="overskrift2">
+          <h2>To this Shit Site</h2>
+        </div>
+        <div id="menubar">
+          <ul id="menu">
+              <li><a>Home</a></li>
+              <li><a>Something</a></li>
+              <li><a>Things</a></li>
+              <li><a>Nothing</a></li>
+          </ul>
+        </div>
       </div>
     </header>
     
