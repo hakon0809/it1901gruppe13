@@ -1,0 +1,56 @@
+#week-table {
+  font-family: sans-serif;
+  width: 100%;
+  border-spacing: 0;
+  table-layout: fixed;
+  margin-bottom: 50px;
+  max-width: 1000px;
+}
+table thead tr th {
+  background: #626E7E;
+  color: #d1d5db;
+  padding: 0.5em;
+  overflow: hidden;
+}
+
+table thead tr th .day {
+  display: block;
+  font-size: 1.2em;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  margin: 0 auto 5px;
+  padding: 5px;
+  line-height: 1.8;
+}
+
+table tbody tr {
+  background: #d1d5db;
+}
+table tbody tr:nth-child(odd) {
+  background: #c8cdd4;
+}
+table tbody tr:nth-child(3n+0) td {
+  border-bottom: 1px solid #626E7E;
+}
+table tbody tr td {
+  text-align: center;
+  vertical-align: middle;
+  border-left: 1px solid #626E7E;
+  position: relative;
+  height: 32px;
+}
+table tbody tr td:last-child {
+  border-right: 1px solid #626E7E;
+}
+table tbody tr td.hour {
+  font-size: 1.8em;
+  padding: 0;
+  color: #626E7E;
+  background: #fff;
+  border-bottom: 1px solid #626E7E;
+  min-width: 80px;
+}
+table tbody tr td.hour span {
+  display: block;
+}
