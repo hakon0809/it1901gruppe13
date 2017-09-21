@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/adminStyle.css">
+</head>
+<body>
+    <container>
+        <form id="addForm">
+            Name:
+            <input type="text" name="nameInput" id="nameInput"><br>
+            Job:
+            <select id="jobInput" name="job">
+                <option value="arrangor">Arrangør</option>
+                <option value="tekniker">Tekniker</option>
+                <option value="bookingansvarlig">Bookingansvarlig</option>
+                <option value="bookingsjef">Bookingsjef</option>
+            </select>
+        </form>
+        <button onclick="function_test()" id="addBtn">Add worker</button>
+        <button onclick="sortTable()" id="sortBtn">Sort table</button>
+
+        <table id="myTable"> <!--style="width:100%"-->
+            <tbody>
+            <tr>
+                <th>Navn</th>
+                <th>???</th>
+                <th>Stilling</th>
+            </tr>
+            <tr>
+                <td>b navn</td>
+                <td>?</td>
+                <td>Arrangør</td>
+            </tr>
+            <tr>
+                <td>a navn</td>
+                <td>?</td>
+                <td>Bookingsjef</td>
+            </tr>
+            <tr>
+                <td>c navn</td>
+                <td>?</td>
+                <td>Bookingsjef</td>
+            </tr>
+            </tbody>
+        </table>
+
+        <p id="demo">ok</p>
+        <p><button id="BTN">hehe</button></p>
+    </container>
+</body>
+<script type="text/javascript" src="../JavaScript/adminJS.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript" src="../JavaScript/jquery.js"></script>
+</html>
