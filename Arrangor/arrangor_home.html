@@ -4,80 +4,8 @@
     <meta charset="utf-8">
     
     <title>A clean template</title>
-    <!--<link rel="stylesheet" type="text/css" href="template_clean.css">-->
+    <link rel="stylesheet" type="text/css" href="..\css\general.css">
     <style type="text/css">
-
-      body{
-        margin: 0px;
-        background-color: #e6e6e6;
-      }
-
-      #Site {
-          display: flex;
-          min-height: 100vh;
-          flex-direction: column;
-      }
-
-      #header {
-        width: 100%;
-        background-color: #333333;
-      }
-
-      #inner-header {
-        max-width: 1000px;
-        margin: auto;
-        background-color: #1a1a1a;
-        overflow: hidden;
-        color: white;
-      }
-      
-      #Main-content {
-        max-width: 970px;
-        margin: auto;
-        padding-left: 15px;
-        padding-right: 15px;
-        flex-grow: 1;
-        flex-shrink: 1;
-        background-color: white;
-      }
-
-      #footer {
-        padding: 10px;
-        text-align: center;
-        background-color: #4d4d4d;
-        
-      }
-
-      #overskrift1, #overskrift2 {
-        text-align: center;
-      }
-
-      #menubar {
-        max-width: 1000px;
-        float: left;
-        height: 50px;
-        text-align: center; 
-        margin: 0 auto;
-      }
-
-      #menu {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        width: 500px;
-      }
-
-      ul#menu li a {
-          display: block;
-          float: left;
-          text-decoration: none;
-          padding: 14px 16px;
-      }
-
-      ul#menu li a:hover {
-        text-decoration: underline;
-        cursor: pointer;
-      }
 
 
     </style>
@@ -87,18 +15,16 @@
   <body id="Site">
     <header id="header">
       <div id="inner-header">
-        <div id="overskrift1">
-          <h1>WELCOME</h1>
+        <div>
+          <h1 id="overskrift1">WELCOME</h1>
         </div>
-        <div id="overskrift2">
-          <h2>To this Shit Site</h2>
+        <div>
+          <h2 id="overskrift2">To this Shit Site</h2>
         </div>
         <div id="menubar">
           <ul id="menu">
-              <li><a>Home</a></li>
-              <li><a>Something</a></li>
-              <li><a>Things</a></li>
-              <li><a>Nothing</a></li>
+              <li><a>Min Side</a></li>
+              <li><a href="arrangor_konsertoversikt.html">Konsertoversikt</a></li>
           </ul>
         </div>
       </div>
@@ -106,11 +32,23 @@
     
     <main id="Main-content">
     
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque bibendum ipsum et turpis fringilla rutrum. Duis ornare orci ut orci iaculis facilisis in sed metus. Etiam vitae ante velit, et condimentum est. Cras pulvinar sem vitae magna eleifend mollis. Sed eu suscipit lectus. Donec rutrum congue libero, at porta diam condimentum a. Donec varius elementum metus, at eleifend turpis ullamcorper a. Proin id magna eget odio varius euismod vitae consequat mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-      </p>
+      <h1>Mine konserter</h1>
 
-      <p>Sed vitae lacus odio. Donec sed est eleifend ligula tempus dictum id nec est. Suspendisse ullamcorper massa ut arcu interdum mollis. Maecenas feugiat semper iaculis. Duis in sapien est, gravida ultricies libero. Morbi eleifend ipsum ut orci consequat accumsan. </p>
+      <h2>Abba</h2>
+      <ul>
+        <li><strong>Dato: </strong></li>
+        <li><strong>Klokka: </strong></li>
+        <li><strong>Teknikere:  </strong></li>
+      </ul>
 
+      <h2>The Beatles</h2>
+      <ul>
+        <li><strong>Dato: </strong></li>
+        <li><strong>Klokka: </strong></li>
+        <li><strong>Scene: </strong></li>
+        <li><strong>Teknikere:  </strong></li>
+      </ul>
+    
     </main>
     
     <footer id="footer">Foot</footer>

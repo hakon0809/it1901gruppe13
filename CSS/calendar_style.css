@@ -70,6 +70,12 @@ ul#menu li a:hover {
   cursor: pointer;
 }
 
+a {
+  color: white;
+}
+
+
+
 #week-table {
   font-family: sans-serif;
   width: 100%;

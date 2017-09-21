@@ -24,6 +24,7 @@ body{
 
 #Main-content {
   max-width: 970px;
+  width: 100%;
   margin: auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -69,5 +70,11 @@ ul#menu li a:hover {
   text-decoration: underline;
   cursor: pointer;
 }
+
+a {
+  color: white;
+}
+
+
 
 
