@@ -1,3 +1,5 @@
+/* Content CSS alle sider*/
+
 body{
   margin: 0px;
   background-color: #e6e6e6;
@@ -27,31 +29,14 @@ body{
   margin-right: 250px;
   margin-top: 15px;
   margin-left: 250px;
+  margin-bottom: 15px;
   padding-top: 10px;
   padding-left: 15px;
   padding-right: 15px;
+  padding-bottom: 10px;
   flex-grow: 1;
   flex-shrink: 1;
   background-color: white;
-}
-
-#footer {
-  padding: 10px;
-  text-align: center;
-  background-color: #333333;
-
-}
-
-#overskrift1, #overskrift2 {
-  text-align: center;
-}
-
-#menubar {
-  max-width: 1000px;
-  float: left;
-  height: 50px;
-  text-align: center;
-  margin: 0 auto;
 }
 
 #menu {
@@ -73,16 +58,33 @@ ul#menu li a:hover {
   cursor: pointer;
 }
 
-a {
-  color: white;
+/* Footer CSS alle sider*/
+#footer {
+  padding: 10px;
+  text-align: center;
+  background-color: #333333;
 }
 
+#overskrift1, #overskrift2 {
+  text-align: center;
 }
+
+#menubar {
+  max-width: 1000px;
+  float: left;
+  height: 50px;
+  text-align: center;
+  margin: 0 auto;
+}
+
 #footer div.column{
   margin:0 0 25px 0;}
 #footer {
+  color: white;
+  font-size: 17px;
   background-color: #333333;
 }
+
 #footer .logo-bw{width:125px;}
 .text-size-xs{font-size:9px;}
 .text-size-sm{font-size:12px;}
@@ -93,8 +95,40 @@ a {
 	color:#FFF;
 	text-align:right;
 }
-
+#logo a.logo{
+	display:block;
+	background:url(img/sted.png) no-repeat;
+	background-size:50px;
+	background-position:30px 0;
+	width:230px;
+	height:116px;
+}
 
 .column {
   column-count: 4
+}
+
+
+/* Admin side CSS*/
+table {
+    border-collapse: collapse;
+    width: 50%;
+}
+
+table, th ,td {
+    border: 1px solid black;
+    text-align: center;
+}
+
+td {
+    height: 25px;
+}
+
+th {
+    background-color: #50ae55;
+    color: white;
+}
+
+td:first-child {
+    width:50%;
 }

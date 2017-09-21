@@ -1,12 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" type="text/css" href="../CSS/adminStyle.css">
-</head>
-<body>
-    <container>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>Admin</title>
+    <link rel="stylesheet" type="text/css" href="..\CSS\general.css">
+
+  </head>
+
+  <body id="Site">
+    <header id="header">
+      <div id="inner-header">
+        <div id="overskrift1">
+          <h1>Nettside</h1>
+        </div>
+        <div id="overskrift2">
+          <h2></h2>
+        </div>
+        <div id="menubar">
+          <ul id="menu">
+              <li><a>Home</a></li>
+              <li><a>Om Oss</a></li>
+              <li><a>Kontakt</a></li>
+              <li><a href="/it1901/Log_In"><a>Log Out</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </header>
+
+<body id="Site">
+    <container id="Main-content">
         <form id="addForm">
             Name:
             <input type="text" name="nameInput" id="nameInput"><br>
@@ -53,4 +77,49 @@
 <script type="text/javascript" src="../JavaScript/adminJS.js"></script>
 <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script type="text/javascript" src="../JavaScript/jquery.js"></script>
+
+<!-- Footer -->
+    <div id="footer">
+        <div class="column">
+          <h5>Nettside AS</h5>
+            <p>
+              <a href="/it1901/kontakt/">Post-/besøksadresser</a>
+            </p>
+            <p>
+            Org.nr.: 999 444 222
+            </p>
+
+          <h5>Kontakt</h5>
+            <p>
+            Telefon: <a href="tel:73009900">73 00 99 00</a><br />
+            Åpningstider: 09-14<br />
+            Ansattsøk
+            </p>
+            <p >
+            <img src="../img/FB-f-Logo__blue_29.png" width="14" alt="FB"/> <a href="http://facebook.com/"> Facebook </a><br/>
+            <img src="../img/Twitter_Logo_White_On_Blue.png" width="14" alt="Twitter"/> <a href="http://twitter.com/"> Twitter </a><br/>
+            </p>
+
+          <p>
+          <a href="/it1901/Om_Oss">Om Nettside.no</a>
+          </p>
+            <p>
+            <a href="/it1901/nettstedkart">Nettstedkart</a><br />
+            <a href="/it1901/personvern">Personvern og informasjonskapsler</a><br />
+            </p>
+            <p>    <!-- Justering av Tekst Størrelse -->
+              <span id="small" class="text-size-xs">A</span>
+              <span id="normal" class="text-size-sm">A</span>
+              <span id="large" class="text-size-xl"> A Juster tekststørrelse </span>
+            </p>
+            <h5>Language</h5>
+            <p>
+            Bokmål | Nynorsk | English
+            </p>
+        </div>
+    </div>
+    </div>
+</div><!-- Container slutt -->
+<div class="container copyright">Nettside Webutvikling &copy; 2017</div>
+</body>
 </html>
