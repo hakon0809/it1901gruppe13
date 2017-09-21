@@ -93,3 +93,8 @@ a {
 	color:#FFF;
 	text-align:right;
 }
+
+
+.column {
+  column-count: 4
+}
