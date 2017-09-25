@@ -1,6 +1,8 @@
-<!DOCTYPE html>
-<html>
+<?php
+  include("login_back.php");
+?>
 
+<html>
 <head>
     <title>Login</title>
     </head>
@@ -9,19 +11,19 @@
     <div class="Login-field">
         <h1>Login</h1>
         <form method="post">
-            <input type="text" name="username" required="required" placeholder="Username"> 
+            <input type="text" name="username" required="required" placeholder="Username">
             <input type="password" name="password" required="required" placeholder="Password">
             <button type="submit" name="login" value="login_submit" class="submit_login">Login</button>
         </form>
     </div>
 </body>
 
-    
+
     <style>
         body {
             background-color: aliceblue;
         }
-        
+
         .Login-field {
             padding: 40px;
             border-radius: 2px;
@@ -32,11 +34,11 @@
             background-color: gainsboro;
             margin-top: 200px;
         }
-        
+
         .Login-field h1 {
             text-align: center;
         }
-        
+
         input[type=text], input[type=password] {
             font-size: 15px;
             width: 100%;
@@ -45,7 +47,7 @@
             position: relative;
             border-top: 1px solid;
         }
-        
+
         .submit_login {
             width: 30%;
             display: block;
