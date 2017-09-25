@@ -9,9 +9,8 @@
     <div class="Login-field">
         <h1>Login</h1>
         <form method="post">
-            <input type="text" name="username" required="required" placeholder="Username"> <br>
-            <input type="password" name="password" required="required" placeholder="Password"><br>
-            <br>
+            <input type="text" name="username" required="required" placeholder="Username"> 
+            <input type="password" name="password" required="required" placeholder="Password">
             <button type="submit" name="login" value="login_submit" class="submit_login">Login</button>
         </form>
     </div>
@@ -20,7 +19,7 @@
     
     <style>
         body {
-            background-color: gainsboro;
+            background-color: aliceblue;
         }
         
         .Login-field {
@@ -30,6 +29,8 @@
             width: 300px;
             overflow: hidden;
             margin: 0 auto 10px;
+            background-color: gainsboro;
+            margin-top: 200px;
         }
         
         .Login-field h1 {
@@ -37,13 +38,22 @@
         }
         
         input[type=text], input[type=password] {
+            font-size: 15px;
             width: 100%;
             height: 30px;
             margin-bottom: 10px;
+            position: relative;
+            border-top: 1px solid;
         }
         
         .submit_login {
-
+            width: 30%;
+            display: block;
+            height: 20px;
+            border: 0px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
         }
     </style>
 
