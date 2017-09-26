@@ -8,15 +8,28 @@ function function_test(){
         alert("wrong name input");
         return;
     }
+
     var selectedElement = document.getElementById("jobInput");
     var job = selectedElement.options[selectedElement.selectedIndex].value;
     name = capitalizeName(name);
+
+    /*
+    var s = document.createElement('select');
+    s.id = 'selectJob';
+    s.innerHTML = '<option value="volvo">Volvo</option><option value="saab">Saab</option><option value="mercedes">Mercedes</option><option value="audi">Audi</option>';
+    var ind = document.getElementById("jobInput").selectedIndex;
+    s.selectIndex = ind;
+    */
+
+
     job = capitalizeName(job);
     if (job == "Arrangor"){
         job = "Arrangør";
     }
+
     var hehe = '<tr><td>' + name + '</td><td>' + "?" + '</td><td>' + job + '</td></tr>';
-    $('#myTable > tbody:last-child').append(hehe);
+    //$('#myTable > tbody:last-child').append(hehe);
+    $('#myTable').append(hehe);
 }
 
 function capitalizeName(str) {
