@@ -9,7 +9,7 @@
     $myusername = $_POST['username'];
     $mypassword = $_POST['password'];
 
-    $sql = "SELECT u_id, role FROM users WHERE username = '$myusername' and password = '$mypassword'";
+    $sql = "SELECT id, role FROM users WHERE username = '$myusername' and password = '$mypassword'";
     $result = $conn->query($sql);
     $row = $result->fetch_array(MYSQLI_ASSOC);
 
